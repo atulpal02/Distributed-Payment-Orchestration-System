@@ -1,0 +1,10 @@
+services:
+  postgres:
+    image: postgres
+    container_name: pg-db
+    environment:
+      POSTGRES_USER: appuser
+      POSTGRES_PASSWORD: apppass
+      POSTGRES_DB: payments
+    ports:
+      - "5433:5432"   # 🔥 CHANGE THIS
